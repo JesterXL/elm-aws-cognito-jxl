@@ -822,7 +822,7 @@ setUserMfapreference req =
         decoder =
             AWS.Http.constantDecoder ()
     in
-    AWS.Http.request "SetUserMfapreference" AWS.Http.POST url jsonBody decoder AWS.Http.awsAppErrDecoder
+    AWS.Http.request "SetUserMFAPreference" AWS.Http.POST url jsonBody decoder AWS.Http.awsAppErrDecoder
 
 
 {-| Sets the UI customization information for a user pool's built-in app UI.
